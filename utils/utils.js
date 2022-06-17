@@ -1,12 +1,12 @@
 import BigNumber from 'bignumber.js'
 
 // todo: get navigator declared somehow? probably an issue with using nextjs
-// function getLang() {
-//  if (window.navigator.languages != undefined)
-//   return window.navigator.languages[0];
-//  else
-//   return window.navigator.language;
-// }
+function getLang() {
+  if (window.navigator.languages != undefined)
+   return window.navigator.languages[0];
+  else
+ return window.navigator.language;
+}
 
 export function formatCurrency(amount, decimals=2) {
   if(!isNaN(amount)) {
